@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="lightBlue">#6cb2fc</color>
+    <color name="lightestBlue">#a8c9ff</color>
+    <color name="red">#e80d35</color>
+    <color name="styleClickedBG">#fc9c0c</color>
+    <color name="lightTan">#f9d18b</color>
+    <color name="lightGray">#e2e2e2</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+</resources>
