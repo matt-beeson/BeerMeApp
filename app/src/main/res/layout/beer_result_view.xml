@@ -50,8 +50,8 @@
             android:hint="Search Beer Names Here!" />
 
         <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:clickable="true"
             android:focusable="true"
             android:layout_marginLeft="4dp"

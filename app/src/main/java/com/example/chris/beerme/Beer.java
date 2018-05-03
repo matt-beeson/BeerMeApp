@@ -70,25 +70,12 @@ public class Beer {
 
                 //convert serving number from string to int
                 double servingInt = Double.parseDouble(beer.abv);
-
-                /*
-                // add abv category to each beer
-                if(servingInt < 4) {
-                    beer.abvLabel = "Less Than 4%";
-                }
-                else if(servingInt <=6){
-                    beer.abvLabel ="4-6%";
-                }
-                else if(servingInt <= 8){
-                    beer.abvLabel = "6-8%";
-                }
-                else{
-                    beer.abvLabel = "More Than 8%";
-                }
-*/
                 //add style to each beer according to keywords in style_name
                 if (beer.style.contains("Amber")){
                     beer.styleLabel = "Amber";
+                }
+                else if (beer.style.contains("Belgian")){
+                    beer.styleLabel = "Belgian Ale";
                 }
                 else if (beer.style.contains("Blonde")||beer.style.contains("Blond")){
                     beer.styleLabel = "Blonde";
@@ -178,8 +165,5 @@ public class Beer {
 
         return json;
     }
-
-
-
 }
 

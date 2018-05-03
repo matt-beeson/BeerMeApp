@@ -25,9 +25,6 @@ public class BeerDetailActivity extends AppCompatActivity {
     private TextView descriptionText;
     private TextView styleText;
     private TextView ABVText;
-
-
-
     private Button submitButton;
 
     @Override
@@ -52,8 +49,14 @@ public class BeerDetailActivity extends AppCompatActivity {
         descriptionText.setText(description);
         nameText.setText(name);
         styleText.setText(style);
-        ABVText.setText(abv + "% Alcohol");
+        if(abv.length()>4){
+            String abvSubstring = abv.substring(0,4);
+            ABVText.setText(abvSubstring + "% Alcohol");
+        }
+        else{
 
+        }
+        ABVText.setText(abv + "% Alcohol");
     }
 
     @Override

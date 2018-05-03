@@ -42,7 +42,6 @@ public class SearchActivity extends AppCompatActivity {
     private GridView mainGrid;
     private ArrayList<String> clickedStyleArray;
     GridAdapter gridAdapter;
-    private int counter =0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,7 +83,6 @@ public class SearchActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Beer selectedBeer = beerList.get(position);
 
-
                 String selectedStyle = styleLabelList.get(position);
                 for(int i = 0; i<beerList.size(); i++) {
                     //if the array doesn't already contain this style, add it
@@ -111,7 +109,8 @@ public class SearchActivity extends AppCompatActivity {
                     }
                 }
 
-                System.out.println(clickedStyleArray.get(clickedStyleArray.size()-1));
+                if(clickedStyleArray.size()>=1)
+                    System.out.println(clickedStyleArray.get(clickedStyleArray.size()-1));
             }
         });
 
@@ -150,4 +149,5 @@ public class SearchActivity extends AppCompatActivity {
     public void launchActivity(Intent intent){
         startActivityForResult(intent,1);
     }
+
 }
