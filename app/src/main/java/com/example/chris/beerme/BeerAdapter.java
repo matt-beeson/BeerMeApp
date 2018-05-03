@@ -112,11 +112,16 @@ public class BeerAdapter extends BaseAdapter implements Filterable {
         nameTextView.setText(beer.name);
         nameTextView.setTextSize(18);
 
-        if (beer.abv.toString().length() > 4) {
+        int abvLength = beer.abv.length();
+
+        if(beer.abv == "0"){
+            abvTextView.setText("ABV n/a");
+        }
+        else if (beer.abv.toString().length() > 4) {
             String abvSubstring = beer.abv.toString().substring(0,4);
             abvTextView.setText(abvSubstring + "%");
         }
-        else{
+        else if (abvLength >0 && abvLength <5){
             abvTextView.setText(beer.abv + "%");
         }
         abvTextView.setTextSize(12);

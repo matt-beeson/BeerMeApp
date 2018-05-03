@@ -79,10 +79,8 @@ public class GridAdapter extends BaseAdapter {
 
         // get corresonpinding recipe for each row
         String beerStlye = (String) getItem(position);
-      //  Beer beer = (Beer) getItem(position);
 
         TextView styleTextView = holder.styleTextView;
-//        TextView categoryTextView = holder.categoryTextView;
         ImageView thumbnailImageView = holder.thumbnailImageView;
 //
         styleTextView.setText(beerStlye);
@@ -91,10 +89,7 @@ public class GridAdapter extends BaseAdapter {
 
         // imageView
         // use Picasso library to load image from the image url
-        //thumbnailImageView.setImageDrawable(getDrawable(R.drawable.beerimage));
         Picasso.with(mContext).load(R.drawable.beerimage).into(thumbnailImageView);
-//        thumbnailImageView.getLayoutParams().height = 20;
-//        thumbnailImageView.getLayoutParams().width = 20;
 
         return convertView;
     }

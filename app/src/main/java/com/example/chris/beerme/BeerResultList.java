@@ -52,14 +52,6 @@ public class BeerResultList extends AppCompatActivity {
             }
         });
 
-//        speakButton = (TextView) findViewById(R.id.btnSpeak);
-//        speakButton.setOnClickListener(new View.OnClickListener() {
-//
-//            @Override
-//            public void onClick(View v) {
-//                startVoiceInput();
-//            }
-//        });
         searchBar = findViewById(R.id.search_bar);
         mContext = this;
         // abvSpinner = findViewById(R.id.abv_dropdown);
@@ -71,50 +63,6 @@ public class BeerResultList extends AppCompatActivity {
 
         mListView = findViewById(R.id.beer_list_view);
         mListView.setAdapter(adapter);
-
-//        mListView.setOnItemClickListener( new AdapterView.OnItemClickListener(){
-//
-//            @Override
-//            public void onItemClick(AdapterView<?> parent, View view,
-//                                    int position, long id){
-//                //Beer selectedBeer = beerList.get(position);
-//                Beer selectedBeer = (Beer) adapter.getItem(position);
-//                // create my intent package
-//                // add all the information needed for detail page
-//                // startActivity with that intent
-//
-//                //explicit
-//                // from, to
-//                Intent detailIntent = new Intent(mContext, BeerDetailActivity.class);
-//                 //put title and instruction URL
-//                detailIntent.putExtra("name", selectedBeer.name);
-//               // detailIntent.putExtra("beerImage", selectedBeer.imageUrl);
-//                detailIntent.putExtra("description",selectedBeer.description);
-//                detailIntent.putExtra("style",selectedBeer.style);
-//                detailIntent.putExtra("category",selectedBeer.category);
-//                detailIntent.putExtra("abv",selectedBeer.abv);
-//
-//                launchActivity(detailIntent);
-//
-//            }
-//        });
-
-//        searchBar.addTextChangedListener(new TextWatcher() {
-//            @Override
-//            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-//
-//            }
-//
-//            @Override
-//            public void onTextChanged(CharSequence s, int start, int before, int count) {
-//                BeerResultList.this.adapter.getFilter().filter(s.toString());
-//            }
-//
-//            @Override
-//            public void afterTextChanged(Editable s) {
-//
-//            }
-//        });
 
         searchBar.addTextChangedListener(new TextWatcher() {
             @Override
@@ -156,10 +104,6 @@ public class BeerResultList extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void launchActivity(Intent intent){
-        startActivityForResult(intent,1);
-    }
-
     private void askSpeechInput() {
         Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
@@ -188,4 +132,3 @@ public class BeerResultList extends AppCompatActivity {
         }
     }
 }
-

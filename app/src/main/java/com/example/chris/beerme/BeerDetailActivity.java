@@ -25,13 +25,12 @@ public class BeerDetailActivity extends AppCompatActivity {
     private TextView descriptionText;
     private TextView styleText;
     private TextView ABVText;
-    private Button submitButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.beer_detail_activity);
-
+        
         myContext = this;
         nameText = findViewById(R.id.name_detail);
         beerImage= findViewById(R.id.image_detail);
@@ -44,12 +43,15 @@ public class BeerDetailActivity extends AppCompatActivity {
         String abv = this.getIntent().getExtras().getString("abv");
         String style = this.getIntent().getExtras().getString("style");
         beerImage.setImageDrawable(getDrawable(R.drawable.beerimage));
-        final int position = this.getIntent().getExtras().getInt("position");
         setTitle(name);
         descriptionText.setText(description);
         nameText.setText(name);
         styleText.setText(style);
-        if(abv.length()>4){
+        if(abv == "0"){
+            ABVText.setText("ABV n/a");
+            System.out.println("yeet");
+        }
+        else if(abv.length()>4){
             String abvSubstring = abv.substring(0,4);
             ABVText.setText(abvSubstring + "% Alcohol");
         }
