@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/BeerMe-master.iml" filepath="$PROJECT_DIR$/BeerMe-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/BeerMeApp.iml" filepath="$PROJECT_DIR$/BeerMeApp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/BeerMeApp-master.iml" filepath="$PROJECT_DIR$/BeerMeApp-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
