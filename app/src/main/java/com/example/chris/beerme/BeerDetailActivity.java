@@ -47,18 +47,18 @@ public class BeerDetailActivity extends AppCompatActivity {
         descriptionText.setText(description);
         nameText.setText(name);
         styleText.setText(style);
+
+        int abvLength = abv.length();
         if(abv == "0"){
             ABVText.setText("ABV n/a");
-            System.out.println("yeet");
         }
-        else if(abv.length()>4){
-            String abvSubstring = abv.substring(0,4);
-            ABVText.setText(abvSubstring + "% Alcohol");
+        else if (abv.toString().length() > 4) {
+            String abvSubstring = abv.toString().substring(0,4);
+            ABVText.setText(abvSubstring + "%");
         }
-        else{
-
+        else if (abvLength >0 && abvLength <5){
+            ABVText.setText(abv + "%");
         }
-        ABVText.setText(abv + "% Alcohol");
     }
 
     @Override

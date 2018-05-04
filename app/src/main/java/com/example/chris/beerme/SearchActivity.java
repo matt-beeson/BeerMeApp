@@ -91,8 +91,8 @@ public class SearchActivity extends AppCompatActivity {
                     }
                 }
 
-                int originalbgcolor = getResources().getColor(R.color.lightBlue);
-                int changedbgcolor = getResources().getColor(R.color.styleClickedBG);
+                int originalbgcolor = getResources().getColor(R.color.lightGray);
+                int changedbgcolor = getResources().getColor(R.color.lightTan);
                 int test = view.getSolidColor();
                 if (view.getSolidColor() == test) {
                     selectedBeer.clickCounter ++;
@@ -109,8 +109,6 @@ public class SearchActivity extends AppCompatActivity {
                     }
                 }
 
-                if(clickedStyleArray.size()>=1)
-                    System.out.println(clickedStyleArray.get(clickedStyleArray.size()-1));
             }
         });
 

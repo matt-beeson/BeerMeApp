@@ -49,6 +49,8 @@ public class SearchResultsActivity extends AppCompatActivity {
                 }
             }
         }
+
+
         if (resultBeers.size()>0){
             adapter = new BeerAdapter(this, resultBeers);
         }
@@ -82,7 +84,6 @@ public class SearchResultsActivity extends AppCompatActivity {
                 detailIntent.putExtra("abv",selectedBeer.abv);
 
                 launchActivity(detailIntent);
-
             }
         });
 
@@ -90,11 +91,9 @@ public class SearchResultsActivity extends AppCompatActivity {
         micButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                System.out.println("Does it work?");
                 askSpeechInput();
             }
         });
-
 
         searchBar = findViewById(R.id.search_bar);
 

@@ -7,6 +7,7 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
     android:layout_marginBottom="7dp"
 android:orientation="vertical"
+    android:background="@color/black"
 xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <RelativeLayout
@@ -16,13 +17,15 @@ xmlns:app="http://schemas.android.com/apk/res-auto">
 
         <TextView
             android:id="@+id/grid_text_view"
-            android:text="Grid Layout Page"
+            android:text="Select a Beer Style!"
             android:textSize="34dp"
+            android:textStyle="italic"
             android:layout_marginTop="15dp"
             android:layout_marginBottom="10dp"
             android:layout_centerHorizontal="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
         />
 
         <Button
@@ -34,7 +37,6 @@ xmlns:app="http://schemas.android.com/apk/res-auto">
             android:layout_below="@+id/grid_text_view"
             android:textStyle="bold"
             />
-
 
 </RelativeLayout>
 

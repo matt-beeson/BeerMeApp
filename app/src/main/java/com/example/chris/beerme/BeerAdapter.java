@@ -106,7 +106,6 @@ public class BeerAdapter extends BaseAdapter implements Filterable {
         TextView categoryTextView = holder.categoryTextView;
         ImageView thumbnailImageView = holder.thumbnailImageView;
         TextView numberOfRecipesTextView = holder.numberOfRecipesTextView;
-        RelativeLayout relativeLayout = holder.relativeLayout;
 
         // update the row view's textviews and imageview to display the information
         nameTextView.setText(beer.name);
@@ -114,7 +113,7 @@ public class BeerAdapter extends BaseAdapter implements Filterable {
 
         int abvLength = beer.abv.length();
 
-        if(beer.abv == "0"){
+        if(beer.abv.toString() == "0"){
             abvTextView.setText("ABV n/a");
         }
         else if (beer.abv.toString().length() > 4) {
@@ -183,7 +182,6 @@ public class BeerAdapter extends BaseAdapter implements Filterable {
                         //I'm not sure how you're going to do comparison, so you'll need to fill out this conditional
                         if(beer.name.toLowerCase().contains(charSequence.toString().toLowerCase()))
                         {
-                            //System.out.println("Title: " + data.title + "Contains " + charSequence);
                             filterResultsData.add(beer);
                         }
                     }
@@ -196,7 +194,6 @@ public class BeerAdapter extends BaseAdapter implements Filterable {
             }
             @Override
             protected void publishResults(CharSequence charSequence, FilterResults filterResults) {
-                //System.out.print("Publish" + filterResults.values);
                 mBeerList = (ArrayList<Beer>)filterResults.values;
                 notifyDataSetChanged();
             }

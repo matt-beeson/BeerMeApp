@@ -10,5 +10,7 @@
     <color name="lightTan">#f9d18b</color>
     <color name="lightGray">#e2e2e2</color>
     <color name="colorWhite">#FFFFFF</color>
+    <color name="black">#871010</color>
+    <color name="brick">#c11d4e</color>
 
 </resources>
