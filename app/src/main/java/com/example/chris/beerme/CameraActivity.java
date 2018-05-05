@@ -178,8 +178,7 @@ public class CameraActivity extends AppCompatActivity {
         // 2. add data to the intent
         intent.putExtra("searchedBeer", textView.getText().toString());
         // 3. start activity with the intent
-
         startActivity(intent);
-        //startActivityForResult(intent, 1);
+
     }
 }
