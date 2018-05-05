@@ -11,9 +11,17 @@
         />
 
     <item
+        android:id="@+id/search_nav"
+        android:icon="@drawable/search"
+        android:title="@String/seach_nav"
+        app:showAsAction="always"
+        android:orderInCategory="2"
+        />
+
+    <item
         android:id="@+id/action_near_me"
         android:icon="@drawable/store"
-        android:orderInCategory="2"
+        android:orderInCategory="3"
         android:title="@String/action_near_me"
         app:showAsAction="always" />
 </menu>

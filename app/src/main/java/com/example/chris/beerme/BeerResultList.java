@@ -64,6 +64,9 @@ public class BeerResultList extends AppCompatActivity {
         mListView = findViewById(R.id.beer_list_view);
         mListView.setAdapter(adapter);
 
+        String searchedBeer = this.getIntent().getExtras().getString("searchedBeer");
+        searchBar.setText(searchedBeer);
+
         searchBar.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int i, int i1, int i2) {
@@ -96,8 +99,12 @@ public class BeerResultList extends AppCompatActivity {
                 startActivity(new Intent(this, CameraActivity.class));
                 return true;
 
+            case R.id.search_nav:
+                startActivity(new Intent(this, SearchActivity.class));
+                return true;
+
             case R.id.action_near_me:
-                startActivity(new Intent(this, MapActivity.class));
+                startActivity(new Intent(this, MapsActivity.class));
                 return true;
 
         }

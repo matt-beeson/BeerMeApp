@@ -7,7 +7,8 @@
         permission to enable the \'my location\' layer. Please try again and
         grant access to use the location.\nIf the permission has been permanently
         denied, it can be enabled from the System Settings &gt; Apps &gt; \'Google Maps API Demos\'.</string>
-    <string name="kml_url">http://www.google.com/maps/d/u/0/kml?forcekml=1&amp;mid=1LuVbYbhZpTtSep4GIRD0BEXWeKc</string>
+    <string name="kml_url">https://developers.google.com/maps/documentation/javascript/examples/kml/westcampus.kml
+</string>
 
 
 

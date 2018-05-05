@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -137,8 +138,12 @@ public class SearchActivity extends AppCompatActivity {
                 startActivity(new Intent(this, CameraActivity.class));
                 return true;
 
+            case R.id.search_nav:
+                startActivity(new Intent(this, SearchActivity.class));
+                return true;
+
             case R.id.action_near_me:
-                startActivity(new Intent(this, MapActivity.class));
+                startActivity(new Intent(this, MapsActivity.class));
                 return true;
 
         }

@@ -130,8 +130,12 @@ public class SearchResultsActivity extends AppCompatActivity {
                 startActivity(new Intent(this, CameraActivity.class));
                 return true;
 
+            case R.id.search_nav:
+                startActivity(new Intent(this, SearchActivity.class));
+                return true;
+
             case R.id.action_near_me:
-                startActivity(new Intent(this, MapActivity.class));
+                startActivity(new Intent(this, MapsActivity.class));
                 return true;
 
         }

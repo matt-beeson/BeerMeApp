@@ -32,8 +32,8 @@ dependencies {
     implementation 'com.android.support:design:27.0.+'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     implementation 'pub.devrel:easypermissions:0.3.0'
-    implementation 'com.google.android.gms:play-services-maps:15.0.0'
-    implementation 'com.google.android.gms:play-services-location:15.0.0'
+    implementation 'com.google.android.gms:play-services-maps:11.8.0'
+    implementation 'com.google.android.gms:play-services-location:11.8.0'
     implementation 'com.google.maps.android:android-maps-utils:0.5+'
     implementation('com.google.api-client:google-api-client-android:1.23.0') {
         exclude group: 'org.apache.httpcomponents'
@@ -48,7 +48,7 @@ dependencies {
     compile 'com.squareup.picasso:picasso:2.5.2'
 
     implementation 'com.google.maps.android:android-maps-utils:0.5+'
-    implementation 'com.google.android.gms:play-services-maps:15.0.0'
-    implementation 'com.google.android.gms:play-services-location:15.0.0'
-    implementation 'com.google.android.gms:play-services-vision:15.0.0'
+    implementation 'com.google.android.gms:play-services-maps:11.8.0'
+    implementation 'com.google.android.gms:play-services-location:11.8.0'
+    implementation 'com.google.android.gms:play-services-vision:11.8.0'
 }

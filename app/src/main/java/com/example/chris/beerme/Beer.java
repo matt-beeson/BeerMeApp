@@ -65,6 +65,7 @@ public class Beer {
 
                 beer.abvInt = Double.parseDouble(beer.abv);
                 // BEER!!!
+
                 //convert serving number from string to int
                 double servingInt = Double.parseDouble(beer.abv);
                 //add style to each beer according to keywords in style_name
