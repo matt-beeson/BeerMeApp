@@ -133,7 +133,7 @@ public class BeerAdapter extends BaseAdapter implements Filterable {
 
         // imageView
         // use Picasso library to load image from the image url
-        Picasso.with(mContext).load(R.drawable.beerpic1).into(thumbnailImageView);
+        Picasso.with(mContext).load(R.drawable.beertap1).into(thumbnailImageView);
 
         holder.myLayout.setOnClickListener(new View.OnClickListener() {
             @Override

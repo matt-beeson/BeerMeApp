@@ -18,7 +18,7 @@
 
     <TextView
         android:id="@+id/scanner_text"
-        android:text="no text"
+        android:text=""
         android:layout_alignParentBottom="true"
         android:textColor="@color/colorWhite"
         android:textSize="20sp"

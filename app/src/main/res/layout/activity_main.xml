@@ -47,7 +47,7 @@
         android:layout_above="@+id/me_neon"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="62dp"
-        android:background="@drawable/beer_neon" />
+        android:background="@drawable/yellowbeer2" />
 
     <ImageView
         android:id="@+id/me_neon"
@@ -56,6 +56,6 @@
         android:layout_above="@+id/home_button"
         android:layout_alignStart="@+id/beer_neon"
         android:layout_marginBottom="30dp"
-        android:background="@drawable/me_neon" />
+        android:background="@drawable/yellowme" />
 
 </RelativeLayout>

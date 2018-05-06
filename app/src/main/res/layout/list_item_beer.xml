@@ -33,6 +33,7 @@
             android:layout_marginRight="8dp"
             android:layout_marginTop="8dp"
             android:textStyle="bold"
+            android:textColor="@color/colorWhite"
             android:text="ABV"
             android:textSize="16sp" />
 
@@ -44,6 +45,7 @@
             android:layout_marginRight="8dp"
             android:textStyle="bold"
             android:layout_marginTop="8dp"
+            android:textColor="@color/colorWhite"
             android:layout_toRightOf="@id/beer_list_abv"
             android:textSize="16sp"
             android:text="Style"
@@ -55,6 +57,7 @@
             android:layout_below="@id/beer_list_abv"
             android:layout_marginLeft="2dp"
             android:textStyle="bold"
+            android:textColor="@color/colorWhite"
             android:layout_marginRight="8dp"
             android:layout_marginTop="2dp"
             android:textSize="16sp"
@@ -69,6 +72,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="2dp"
         android:textStyle="bold"
+        android:textColor="@color/colorWhite"
         android:layout_alignTop="@+id/beer_list_thumbnail"
         android:layout_toEndOf="@+id/beer_list_thumbnail"
         android:text="Beer name"
