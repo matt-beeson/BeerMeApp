@@ -28,6 +28,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.maps.GoogleMap;
+
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
@@ -149,6 +151,7 @@ public class SearchActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
     public void launchActivity(Intent intent){
         startActivityForResult(intent,1);
     }
